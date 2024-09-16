@@ -1,0 +1,480 @@
+
+*** Running vivado
+    with args -log alarm_improve.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source alarm_improve.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source alarm_improve.tcl -notrace
+Command: synth_design -top alarm_improve -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2312
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1138.590 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alarm_improve' [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/sources_1/new/alarm_improve.v:18]
+	Parameter kongbai bound to: 9'b000000001 
+	Parameter xiaodou bound to: 9'b000000010 
+	Parameter saomiao0 bound to: 9'b000000100 
+	Parameter saomiao1 bound to: 9'b000001000 
+	Parameter saomiao2 bound to: 9'b000010000 
+	Parameter saomiao3 bound to: 9'b000100000 
+	Parameter zhi bound to: 9'b001000000 
+	Parameter sfd bound to: 9'b010000000 
+	Parameter sfxd bound to: 9'b100000000 
+	Parameter huanchong0 bound to: 9'b000000011 
+	Parameter huanchong1 bound to: 9'b000000111 
+	Parameter huanchong2 bound to: 9'b000001111 
+	Parameter huanchong3 bound to: 9'b000011111 
+	Parameter huanchong4 bound to: 9'b000111111 
+	Parameter N_xd bound to: 24'b000001111010000100100000 
+	Parameter N bound to: 5'b10011 
+	Parameter N_fp bound to: 28'b0101111101011110000100000000 
+INFO: [Synth 8-226] default block is never used [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/sources_1/new/alarm_improve.v:662]
+INFO: [Synth 8-226] default block is never used [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/sources_1/new/alarm_improve.v:699]
+INFO: [Synth 8-226] default block is never used [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/sources_1/new/alarm_improve.v:737]
+INFO: [Synth 8-226] default block is never used [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/sources_1/new/alarm_improve.v:777]
+INFO: [Synth 8-6155] done synthesizing module 'alarm_improve' (1#1) [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/sources_1/new/alarm_improve.v:18]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1183.551 ; gain = 44.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1183.551 ; gain = 44.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1183.551 ; gain = 44.961
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1183.551 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc]
+WARNING: [Vivado 12-584] No ports matched 'key_col[3]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_col[2]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_col[1]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_col[0]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[7]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[6]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[5]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[4]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[3]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[2]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[1]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[0]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[7]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[6]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[5]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[4]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[3]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[2]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[1]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[0]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[7]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[6]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[5]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[4]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[3]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[2]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[1]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[0]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_row[3]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_row[2]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_row[1]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_row[0]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_col[3]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_col[2]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_col[1]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_col[0]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_row[3]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_row[2]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_row[1]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'key_row[0]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[7]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[5]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[4]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[6]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[3]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[2]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[1]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[0]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[7]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[6]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[5]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[4]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[3]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[2]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[1]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment[0]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[7]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[6]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[5]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[4]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[3]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[2]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[1]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segment1[0]'. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/constrs_1/new/123.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/alarm_improve_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/alarm_improve_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1291.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1291.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1291.477 ; gain = 152.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1291.477 ; gain = 152.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1291.477 ; gain = 152.887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'stata_reg' in module 'alarm_improve'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 kongbai |                   00000000000001 |                        000000001
+                 xiaodou |                   00000000000010 |                        000000010
+              huanchong0 |                   00000000000100 |                        000000011
+                saomiao0 |                   00000000001000 |                        000000100
+              huanchong1 |                   00000000010000 |                        000000111
+                saomiao1 |                   00000000100000 |                        000001000
+              huanchong2 |                   00000001000000 |                        000001111
+                saomiao2 |                   00000010000000 |                        000010000
+              huanchong3 |                   00000100000000 |                        000011111
+                saomiao3 |                   00001000000000 |                        000100000
+                     zhi |                   00010000000000 |                        001000000
+              huanchong4 |                   00100000000000 |                        000111111
+                     sfd |                   01000000000000 |                        010000000
+                    sfxd |                   10000000000000 |                        100000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stata_reg' using encoding 'one-hot' in module 'alarm_improve'
+WARNING: [Synth 8-327] inferring latch for variable 'key_board_reg' [C:/Users/Han/Desktop/Naozhong/Naozhong.srcs/sources_1/new/alarm_improve.v:284]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1291.477 ; gain = 152.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   29 Bit       Adders := 1     
+	   2 Input   19 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 6     
++---Registers : 
+	               29 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 17    
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   29 Bit        Muxes := 2     
+	   2 Input   19 Bit        Muxes := 2     
+	  14 Input   14 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 6     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 4     
+	  14 Input    7 Bit        Muxes := 4     
+	  19 Input    7 Bit        Muxes := 1     
+	  14 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 19    
+	   5 Input    4 Bit        Muxes := 1     
+	  17 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 29    
+	  14 Input    1 Bit        Muxes := 20    
+	   5 Input    1 Bit        Muxes := 1     
+	  17 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1291.477 ; gain = 152.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1291.477 ; gain = 152.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1291.477 ; gain = 152.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1299.379 ; gain = 160.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1313.574 ; gain = 174.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1313.574 ; gain = 174.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1313.574 ; gain = 174.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1313.574 ; gain = 174.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1313.574 ; gain = 174.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1313.574 ; gain = 174.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    17|
+|3     |LUT1   |     4|
+|4     |LUT2   |    28|
+|5     |LUT3   |    36|
+|6     |LUT4   |    58|
+|7     |LUT5   |   108|
+|8     |LUT6   |   133|
+|9     |FDCE   |   194|
+|10    |FDPE   |     7|
+|11    |FDRE   |    11|
+|12    |LD     |     4|
+|13    |IBUF   |     6|
+|14    |OBUF   |    20|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1313.574 ; gain = 174.984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1313.574 ; gain = 67.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1313.574 ; gain = 174.984
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1325.613 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1325.613 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 65 Warnings, 64 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1325.613 ; gain = 187.023
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Han/Desktop/Naozhong/Naozhong.runs/synth_1/alarm_improve.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file alarm_improve_utilization_synth.rpt -pb alarm_improve_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 24 20:42:38 2024...
